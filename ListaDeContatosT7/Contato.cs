@@ -69,8 +69,9 @@ namespace ListaDeContatosT7
 
             Nome = "Jóse";
             Sobrenome = "Da Silva";
-            Telefone = "11-99999-9999";
+            Telefone = "(11)-99999-9999";
         }
+
         public Contato(string nome, string sobrenome, string telefone)
         {
 
@@ -87,8 +88,8 @@ namespace ListaDeContatosT7
          
         {
             string saida = string.Empty;
-            saida += String.Format("{0}, {1}", Nome, Sobrenome);
-            saida += string.Format("+{0} {1}-{2}",
+            saida += String.Format(" {0} {1} ", Nome, Sobrenome);
+            saida += string.Format(" +{0} {1}-{2} ",
                 Telefone.Substring(0, 2),
                 Telefone.Substring(2, 5),
                 Telefone.Substring(7, 4));
